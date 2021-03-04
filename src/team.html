@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Site</title>
-    <link rel="stylesheet" type="text/css" href="styles/home.css" />
+    <title>Los Angeles Lakers</title>
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/team.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600;1,900&display=swap"
@@ -14,32 +15,141 @@
 </head>
 
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="assets/images/lakers_logo.png" alt="Image Website Logo">
+    <header class="header">
+        <a class="logo_link" href="./index.html">
+            <img class="logo" src="assets/images/lakers_logo.png" alt="Image Website Logo">
         </a>
         <nav class="menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a class="active" href="./team.html">Team</a></li>
-                <li><a href="./history.html">History</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="menu_list">
+                <li class="menu_item"><a href="./index.html">Home</a></li>
+                <li class="menu_item"><a class="active" href="./team.html">Team</a></li>
+                <li class="menu_item"><a href="./history.html">History</a></li>
+                <li class="menu_item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="content">
         <h1>Get to know the Lakers 2020-2021 Roster</h1>
-        <ul class="Position">
-            <li class="Guard"><a href="#">Guards</a></li>
-            <li class="Forward"><a href="#">Forwards</a></li>
-            <li class="Center"><a href="#">Center</a></li>
-        </ul>
-        <ul class="Guard">
-            <li>Dennis Schröder</li>
-        </ul>
-        <ul class="Forward">
-            <li>Lebron James</li>
-        </ul>
+        <div class="pos_wrapper">
+            <div class="pos">
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_schroeder.jpg"
+                        alt="Player Guard Dennis Schroeder Image">
+                    <a href="https://www.nba.com/lakers/team/203471/dennis-schroder/" class="pos_info-link" target="_blank">
+                        Dennis Schroeder
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_matthews.jpg"
+                        alt="Player Guard Wesley Matthews Image">
+                    <a href="https://www.nba.com/lakers/team/202083/wesley-matthews/" class="pos_info-link" target="_blank">
+                        Wesley Matthews
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_caldwell-pope.jpg"
+                        alt="Player Guard Kentavious Caldwell-Pope Image">
+                    <a href="https://www.nba.com/lakers/team/203484/kentavious-caldwell-pope/" class="pos_info-link" target="_blank">
+                        Kentavious Caldwell-Pope
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_caruso.jpg"
+                        alt="Player Guard Alex Caruso Image">
+                    <a href="https://www.nba.com/lakers/team/1627936/alex-caruso/" class="pos_info-link" target="_blank">
+                        Alex Caruso
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_horton-tucker.jpg"
+                        alt="Player Guard Talen Horton-Tucker Image">
+                    <a href="https://www.nba.com/lakers/team/1629659/talen-horton-tucker/" class="pos_info-link" target="_blank">
+                        Talen Horton-Tucker
+                    </a>
+                </div>
+            </div>
+            <div class="pos">
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_james.jpg"
+                        alt="Player Forward Lebron James Image">
+                    <a href="https://www.nba.com/lakers/team/2544/lebron-james/" class="pos_info-link" target="_blank">
+                        Lebron James
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_kuzma.jpg"
+                        alt="Player Forward Kyle Kuzma Image">
+                    <a href="https://www.nba.com/lakers/team/1628398/kyle-kuzma/" class="pos_info-link" target="_blank">
+                        Kyle Kuzma
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_morris.jpg"
+                        alt="Player Forward Marcus Morris Image">
+                    <a href="https://www.nba.com/lakers/team/202693/markieff-morris/" class="pos_info-link" target="_blank">
+                        Marcus Morris
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_cacok.jpg"
+                        alt="Player Forward Devontae Cacok Image">
+                    <a href="https://www.nba.com/lakers/team/1629719/devontae-cacok/" class="pos_info-link" target="_blank">
+                        Devontae Cacok
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_antetokounmpo.jpg"
+                        alt="Player Forward Kostas Antetokounmpo Image">
+                    <a href="https://www.nba.com/lakers/team/1628961/kostas-antetokounmpo/" class="pos_info-link" target="_blank">
+                        Kostas Antetokounmpo
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_mckinnie.jpg"
+                        alt="Player Forward Alfonzo McKinnie Image">
+                    <a href="https://www.nba.com/lakers/team/1628035/alfonzo-mckinnie/" class="pos_info-link" target="_blank">
+                        Alfonzo McKinnie
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_dudley.jpg"
+                        alt="Player Forward Jared Dudley Image">
+                    <a href="https://www.nba.com/lakers/team/201162/jared-dudley/" class="pos_info-link" target="_blank">
+                        Jared Dudley
+                    </a>
+                </div>
+            </div>
+            <div class="pos">
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_davis.jpg"
+                        alt="Player Center Anthony Davis Image">
+                    <a href="https://www.nba.com/lakers/team/203076/anthony-davis/" class="pos_info-link" target="_blank">
+                        Anthony Davis
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_gasol.jpg"
+                        alt="Player Center Marc Gasol Image">
+                    <a href="https://www.nba.com/lakers/team/201188/marc-gasol/" class="pos_info-link" target="_blank">
+                        Marc Gasol
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_harrell.jpg"
+                        alt="Player Center Montrezl Harrell Image">
+                    <a href="https://www.nba.com/lakers/team/1626149/montrezl-harrell/" class="pos_info-link" target="_blank">
+                        Montrezl Harrell
+                    </a>
+                </div>
+                <div class="pos_box">
+                    <img class="pos_img" src="../src/assets/images/players/img_jones.jpg"
+                        alt="Player Center Damian Jones Image">
+                    <a href="https://www.nba.com/lakers/team/1627745/damian-jones" class="pos_info-link" target="_blank">
+                        Damian Jones
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 

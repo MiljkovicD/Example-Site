@@ -1,0 +1,52 @@
+.pos_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pos {
+    display: flex;
+    flex-direction: column;
+}
+
+.pos_img:last-child {
+    margin-bottom: 0;
+}
+
+.pos_box {
+    position: relative;
+    width: 350px;
+    height: 443px;
+}
+
+.pos_box:hover .pos_info-link {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.pos_info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    transition: visibility 0s ease, opacity 0.5s ease;
+}
+
+.pos_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
