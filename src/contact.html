@@ -8,6 +8,8 @@
     <title>Los Angeles Lakers</title>
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./javascript/contact.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600;1,900&display=swap"
@@ -30,29 +32,18 @@
     </header>
     <main class="content">
         <div class="contact_text">
-            <p>
-                <b>Country:</b>
-                <br>
-                <b>United States of America</b>
-                <br>
-                <br>
-                <b>Staples Center:</b>
-                <br>
-                <b>1111 S. Figueroa St.</b>
-                <br>
-                <b>Los Angeles, CA 90015</b>
-                <br>
-                <br>
-                <b>UCLA Health Training Center:</b>
-                <br>
-                <b>2275 E. Mariposa Ave.</b>
-                <br>
-                <b>El Segundo, CA 90245</b>
-                <br>
-                <br>
-                <a class="contact_mail" href="mailto:Max.Mustermann@hotmail.com">Max Mustermann, Max.Mustermann@hotmail.com</a>
-                <br>
-            </p>
+            <ul class="adress_block">
+                <span>Country:</span>
+                <span>United States of America</span>
+                <span>Staples Center:</span>
+                <span>1111 S. Figueroa St.</span>
+                <span>Los Angeles, CA 90015</span>
+                <span>UCLA Health Training Center:</span>
+                <span>2275 E. Mariposa Ave.</span>
+                <span>El Segundo, CA 90245</span>
+                <a class="contact_mail" href="mailto:Max.Mustermann@hotmail.com" target="_blank">Max Mustermann,
+                    Max.Mustermann@hotmail.com</a>
+            </ul>
         </div>
         <div class="map_image">
             <iframe
@@ -60,6 +51,11 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
+    <div id="map">
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFrOwnEKVrOLpiaucWj6qDcDNqdcjkSI&callback=initMap&libraries=&v=weekly"
+            async></script>
+    </div>
 </body>
 
 </html>

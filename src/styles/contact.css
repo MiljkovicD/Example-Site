@@ -8,6 +8,11 @@
     display: flex;
 }
 
+.adress_block {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact_mail {
     padding: 0;
 }
@@ -15,4 +20,11 @@
 .map_image {
     padding-left: 30px;
     padding-top: 15px;
+}
+
+#map {
+    width: 600px;
+    height: 450px;
+    padding: 70px;
+    margin: 70px;
 }
