@@ -8,16 +8,17 @@
     display: flex;
 }
 
-.adress_block {
+.contact_adress {
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 
 .contact_mail {
     padding: 0;
 }
 
-.map_image {
+.img_map {
     padding-left: 30px;
     padding-top: 15px;
 }
