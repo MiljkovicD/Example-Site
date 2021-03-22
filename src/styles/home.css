@@ -1,9 +1,13 @@
-.img_lbjad {
-  height: 250px;
-  width: 400px;
+.home_img  {
+  width: 100%
 }
 
-.img_champs {
-  height: 350px;
-  width: 550px;
+@media (min-width: 1024px) {
+  .home_img {
+    width: 50%;
+  }
+
+  .home_img--default {
+    width: auto;
+  }
 }

@@ -1,11 +1,13 @@
 .pos_wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .pos {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .pos_img:last-child {
@@ -49,4 +51,27 @@
     top: 0;
     bottom: 0;
     right: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1999px) {
+    .pos_wrapper {
+        flex-direction: row;
+    }
+
+    .pos_box {
+        position: relative;
+        height: 221px;
+        width: 175px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pos_wrapper {
+        flex-direction: row;
+    }
+
+    .pos_box {
+        width: 350px;
+        height: 443px;
+    }
 }
